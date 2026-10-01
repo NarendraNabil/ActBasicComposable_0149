@@ -106,3 +106,16 @@ fun TugasLogin(
                 fontWeight = FontWeight.Bold,
                 color = Color.Blue
             )
+
+            // NIM
+
+            Text(
+                text = "20240140149",
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+
+            Spacer(
+                modifier = Modifier.size(15.dp)
+            )
