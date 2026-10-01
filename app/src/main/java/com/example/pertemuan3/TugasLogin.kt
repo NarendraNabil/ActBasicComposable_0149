@@ -74,3 +74,19 @@ fun TugasLogin(
             Spacer(
                 modifier = Modifier.size(35.dp)
             )
+
+            // LOGO UMY
+
+            Image(
+                painter = painterResource(
+                    id = R.drawable.logo_umy
+                ),
+                contentDescription = "Logo UMY",
+                modifier = Modifier.size(145.dp),
+                contentScale = ContentScale.Fit
+            )
+
+
+            Spacer(
+                modifier = Modifier.size(35.dp)
+            )
