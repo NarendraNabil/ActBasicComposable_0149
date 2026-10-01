@@ -20,3 +20,13 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                 ) { innerPadding ->
 
+                    TataletakColumnRow(
+                        modifier = Modifier.padding(
+                            paddingValues = innerPadding
+                        )
+                    )
+                }
+            }
+        }
+    }
+}
