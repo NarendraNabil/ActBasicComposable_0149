@@ -53,3 +53,12 @@ fun TugasLogin(
             Spacer(
                 modifier = Modifier.size(65.dp)
             )
+
+            // JUDUL LOGIN
+
+            Text(
+                text = "Login",
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
