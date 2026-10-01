@@ -20,6 +20,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -98,6 +99,33 @@ fun TataletakRowColumn(modifier: Modifier) {
             Text(text = "Komponen1Kolom2")
             Text(text = "Komponen2Kolom2")
             Text(text = "Komponen3Kolom2")
+        }
+    }
+}
+
+
+@Composable
+fun TataletakBoxColumnRow(modifier: Modifier) {
+    val gambar = painterResource(id = R.drawable.notasibalok)
+    Column {
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height( height = 110.dp)
+                .background(color = Color.Yellow),
+            contentAlignment = Alignment.Center
+        ) {
+            Column() {
+                Row(
+                    modifier = modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Col1_Row1_Komponen1")
+                    Text(text = "Col1_Row1_Komponen2")
+                    Text(text = "Col1_Row1_Komponen3")
+
+                }
+            }
         }
     }
 }
