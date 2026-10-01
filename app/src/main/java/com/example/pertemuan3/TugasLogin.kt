@@ -41,3 +41,15 @@ fun TugasLogin(
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop
         )
+
+        // KONTEN LOGIN
+
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Top
+        ) {
+
+            Spacer(
+                modifier = Modifier.size(65.dp)
+            )
