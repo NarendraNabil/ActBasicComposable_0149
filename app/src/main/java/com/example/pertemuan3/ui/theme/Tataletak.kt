@@ -1,6 +1,5 @@
 package com.example.pertemuan3
 
-import android.text.Layout
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -8,7 +7,6 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -21,7 +19,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -62,9 +59,9 @@ fun TataletakBox(modifier: Modifier) {
 
 @Composable
 fun TataletakColumnRow(modifier: Modifier) {
-    Column() {
+    Column(modifier = modifier) {
         //Baris 1
-        Row(modifier = modifier.fillMaxWidth(),
+        Row(modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly) {
             Text(text = "Komponen1Baris1")
             Text(text = "Komponen2Baris1")
@@ -72,7 +69,7 @@ fun TataletakColumnRow(modifier: Modifier) {
         }
 
         //Baris 2
-        Row(modifier = modifier.fillMaxWidth(),
+        Row(modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly) {
             Text(text = "Komponen1Baris2")
             Text(text = "Komponen2Baris2")
