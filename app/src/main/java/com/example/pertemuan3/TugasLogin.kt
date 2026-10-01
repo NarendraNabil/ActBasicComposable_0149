@@ -119,3 +119,24 @@ fun TugasLogin(
             Spacer(
                 modifier = Modifier.size(15.dp)
             )
+
+            // GAMBAR KUCING
+
+            Image(
+                painter = painterResource(
+                    id = R.drawable.kucing
+                ),
+                contentDescription = "Gambar",
+                modifier = Modifier
+                    .size(285.dp)
+                    .clip(CircleShape)
+                    .border(
+                        width = 4.dp,
+                        color = Color.White,
+                        shape = CircleShape
+                    ),
+                contentScale = ContentScale.Crop
+            )
+        }
+    }
+}
