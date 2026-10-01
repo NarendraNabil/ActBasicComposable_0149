@@ -62,3 +62,15 @@ fun TugasLogin(
                 fontWeight = FontWeight.Bold,
                 color = Color.Blue
             )
+
+            // SUB JUDUL
+
+            Text(
+                text = "Ini adalah halaman login,",
+                fontSize = 14.sp,
+                color = Color.White
+            )
+
+            Spacer(
+                modifier = Modifier.size(35.dp)
+            )
