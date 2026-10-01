@@ -50,7 +50,6 @@ fun TataletakRow(modifier: Modifier) {
 fun TataletakBox(modifier: Modifier) {
     Box(
         modifier = modifier
-            .fillMaxWidth()
             .fillMaxWidth(), contentAlignment = Alignment.Center
     ) {
         Text(text = "Box 1")
