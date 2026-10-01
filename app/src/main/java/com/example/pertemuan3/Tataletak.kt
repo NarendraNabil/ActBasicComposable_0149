@@ -34,8 +34,10 @@ fun TataletakColumn(modifier: Modifier) {
 
 @Composable
 fun TataletakRow(modifier: Modifier) {
-    Row(modifier = modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.SpaceEvenly) {
+    Row(
+        modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceEvenly
+    ) {
         Text(text = "Komponen1")
         Text(text = "Komponen2")
         Text(text = "Komponen3")
@@ -61,16 +63,20 @@ fun TataletakBox(modifier: Modifier) {
 fun TataletakColumnRow(modifier: Modifier) {
     Column(modifier = modifier) {
         //Baris 1
-        Row(modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceEvenly) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
             Text(text = "Komponen1Baris1")
             Text(text = "Komponen2Baris1")
             Text(text = "Komponen3Baris1")
         }
 
         //Baris 2
-        Row(modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceEvenly) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
             Text(text = "Komponen1Baris2")
             Text(text = "Komponen2Baris2")
             Text(text = "Komponen3Baris2")
@@ -104,11 +110,11 @@ fun TataletakRowColumn(modifier: Modifier) {
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier) {
     val gambar = painterResource(id = R.drawable.notasibalok)
-    Column (modifier = modifier){
+    Column(modifier = modifier) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height( height = 110.dp)
+                .height(height = 110.dp)
                 .background(color = Color.Yellow),
             contentAlignment = Alignment.Center
         ) {
@@ -128,21 +134,26 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height (300.dp)
+                .height(300.dp)
                 .background(Color.Cyan),
             contentAlignment = Alignment.Center
-        ){
-            Image(painter = gambar,
+        ) {
+            Image(
+                painter = gambar,
                 contentDescription = null,
-                contentScale = ContentScale.Fit)
+                contentScale = ContentScale.Fit
+            )
 
-            Text(text = "My Music",
+            Text(
+                text = "My Music",
                 fontSize = 50.sp,
                 color = Color.Red,
                 fontWeight = FontWeight.Bold,
                 fontFamily = FontFamily.Cursive,
                 modifier = Modifier.align(
-                    alignment = Alignment.Center))
+                    alignment = Alignment.Center
+                )
+            )
         }
     }
 }
