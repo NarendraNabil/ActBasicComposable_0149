@@ -90,3 +90,19 @@ fun TugasLogin(
             Spacer(
                 modifier = Modifier.size(35.dp)
             )
+
+            // NAMA
+
+            Text(
+                text = "Nama",
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Red
+            )
+
+            Text(
+                text = "Narendra Nabil Putra",
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
